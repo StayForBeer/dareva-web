@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-mail potvrzen – Dareva</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<main>
+  <a class="logo" href="index.html">dareva<span></span></a>
+
+  <!-- Úspěch -->
+  <div id="ok">
+    <h1>E-mail je potvrzený ✓</h1>
+    <p class="meta">Vrať se do aplikace Dareva a přihlas se svým e-mailem a heslem. Tuhle stránku můžeš zavřít.</p>
+    <div class="karta">
+      <strong>Email confirmed ✓</strong><br>
+      Go back to the Dareva app and log in with your e-mail and password. You can close this page.
+    </div>
+  </div>
+
+  <!-- Chyba (odkaz vypršel nebo už byl použitý) -->
+  <div id="chyba" hidden>
+    <h1>Odkaz už neplatí</h1>
+    <p class="meta">Odkaz vypršel nebo už byl použitý. Zkus se v aplikaci přihlásit. Pokud to nepůjde, zaregistruj se znovu a klikni na nový odkaz z e-mailu.</p>
+    <div class="karta">
+      <strong>This link is no longer valid</strong><br>
+      The link has expired or has already been used. Try logging in to the app. If that doesn't work, sign up again and click the new link in the e-mail.
+    </div>
+  </div>
+
+  <footer>Kontakt / Contact: <a href="mailto:hlaseniproblemu@gmail.com">hlaseniproblemu@gmail.com</a></footer>
+</main>
+<script>
+  // Supabase při chybě přidá do adresy "error=..."
+  if ((location.hash + location.search).indexOf("error") !== -1) {
+    document.getElementById("ok").hidden = true;
+    document.getElementById("chyba").hidden = false;
+  }
+</script>
+</body>
+</html>
