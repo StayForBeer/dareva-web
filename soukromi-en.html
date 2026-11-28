@@ -31,11 +31,16 @@
     <tr><th>Data</th><th>Purpose</th><th>Legal basis</th></tr>
     <tr>
       <td>E-mail and password (the password is stored only in encrypted form)</td>
-      <td>Creating your account and logging in</td>
+      <td>Creating your account and logging in with a password or a one-time code sent by e-mail</td>
       <td>Performance of a contract (Art. 6(1)(b) GDPR)</td>
     </tr>
     <tr>
-      <td>Username, personal code for adding friends</td>
+      <td>When you sign in with Google: e-mail, name and Google account ID</td>
+      <td>Creating your account and logging in without a password</td>
+      <td>Performance of a contract</td>
+    </tr>
+    <tr>
+      <td>Username, personal code for adding and inviting friends</td>
       <td>Telling users apart, adding friends by name or QR code</td>
       <td>Performance of a contract</td>
     </tr>
@@ -105,9 +110,24 @@
       <td>Legitimate interest (Art. 6(1)(f) GDPR)</td>
     </tr>
     <tr>
-      <td>Dareva Plus subscription (whether you have it, the plan and when it ends)</td>
-      <td>Unlocking Dareva Plus features</td>
+      <td>Dareva Plus subscription (whether you have it, the plan, when it ends, whether it is a trial and whether a payment failed)</td>
+      <td>Unlocking Dareva Plus features and notifying you when a trial is ending or a payment failed</td>
       <td>Performance of a contract</td>
+    </tr>
+    <tr>
+      <td>Invitations: who invited you and whom you invited, whether they completed their first challenge, Dareva Plus bonus days</td>
+      <td>Rewarding you for inviting a friend (a week of Dareva Plus, up to 5 a year)</td>
+      <td>Performance of a contract</td>
+    </tr>
+    <tr>
+      <td>The link you installed the app from on Google Play (only the friend's code, if the link contains one)</td>
+      <td>Filling in the friend's code automatically when you sign up</td>
+      <td>Legitimate interest (Art. 6(1)(f) GDPR)</td>
+    </tr>
+    <tr>
+      <td>Your phone's push notification address (a token from Expo and Firebase) and your alert settings</td>
+      <td>Sending alerts to your phone (e.g. friend requests, a challenge ending, your weekly result)</td>
+      <td>Performance of a contract. You can turn phone alerts off at any time.</td>
     </tr>
     <tr>
       <td>Device advertising ID, IP address, device information and ad view information (only without a subscription, when you reroll a challenge with an ad)</td>
@@ -124,7 +144,10 @@
   <p><strong>Nobody</strong> sees your questionnaire answers, health restrictions, steps and distance from Health Connect, location or route maps.</p>
   <p><strong>Steps and distance (Health Connect):</strong> we only read; we never write anything to Health Connect. Manually entered records don't count. We use data from Health Connect only to verify challenges in the app. We don't sell it, don't use it for advertising or creditworthiness decisions and don't share it with anyone apart from the server provider listed below. Our use of Health Connect data follows the Google Play policy for Health Connect, including the Limited Use requirements.</p>
   <p><strong>Location:</strong> we read it only while you record a route that you start yourself. A notification is visible for the whole recording, and location is never used in the background without it. Route points are sent to our server only to be checked (distance, and whether the route was driven) and are deleted straight after the check. Only the final distance in metres is saved. The route map stays only on your phone, without the first and last 150 metres, and is never shared.</p>
-  <p><strong>Notifications</strong> (challenge reminders) are scheduled directly by your phone. Nothing is sent to our server for them.</p>
+  <p><strong>Challenge reminders</strong> are scheduled directly by your phone. Nothing is sent to our server for them.</p>
+  <p><strong>Phone alerts (push):</strong> when you allow notifications, we store your phone's push notification address. When there is a new alert (for example a friend request, a reaction, a weekly challenge ending, your weekly result or a Plus trial ending), our server sends a short alert text, possibly including a friend's name, through the Expo service and Firebase Cloud Messaging to your phone. You choose which alerts go to the in-app bell and which to your phone under <em>Profile → Alerts</em>. The address is deleted when you log out.</p>
+  <p><strong>Invitations:</strong> if you sign up with a friend's code, you become friends straight away and your friend can see that you joined and whether you completed your first challenge. The app can fill in the friend's code automatically from the Google Play link you installed it from.</p>
+  <p><strong>Offline and widget:</strong> today's challenge is also stored on your phone so you can see and complete it without internet and so the home screen widget can show it. A challenge completed offline (photo included) waits on your phone until it is sent. The widget shows today's challenge title and your streak on your home screen, so anyone who sees your phone can see them. You can remove the widget at any time.</p>
   <p><strong>Ads</strong> are shown only without a subscription, and only when you choose to reroll a challenge by watching a short video. There are no ads anywhere else in the app. On first launch, a form from Google asks for your consent to personalised ads. If you decline, you'll see non-personalised ads. You can change your consent at any time under <em>Profile → Account &amp; privacy → Ad settings</em>. With a Dareva Plus subscription there are no ads.</p>
   <p>The app does not use third-party analytics tools (apart from the crash reporting described below) and we <strong>do not sell</strong> your data to anyone. We never use health data, location, questionnaire answers or photos for advertising.</p>
 
@@ -134,6 +157,8 @@
   <p><strong>Subscription:</strong> the subscription status is managed with the help of <strong>RevenueCat</strong> (RevenueCat, Inc., USA). It only receives an anonymous account ID and purchase information from Google Play (product, date, validity), not your e-mail or name. The transfer to the USA is protected by standard contractual clauses.</p>
   <p><strong>Ads:</strong> rewarded ads are served by <strong>Google AdMob</strong> (Google Ireland Limited) as an independent controller under its own policies (<a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>). We don't send it any information about your account.</p>
   <p><strong>Crash reporting:</strong> when the app crashes, a technical report (error description, app version, phone model and system and an anonymous account ID) is sent automatically to the <strong>Sentry</strong> service (Functional Software, Inc.). The data is stored in the <strong>European Union (Germany)</strong>. The report does not contain your e-mail, name, photos or notes and is used only to fix bugs. It is deleted after 90 days at the latest.</p>
+  <p><strong>Sign in with Google:</strong> when you sign in with Google, your account is verified by <strong>Google</strong> (Google Ireland Limited), which passes us only your e-mail, name and account ID. We have no access to your Google account or password.</p>
+  <p><strong>Push notifications and app updates:</strong> phone alerts are delivered by the <strong>Expo</strong> service (650 Industries, Inc., USA) through <strong>Firebase Cloud Messaging</strong> (Google). They receive only your phone's address and the alert text. The app also downloads fixes and updates from Expo's servers, which involves your phone's IP address and the app version. Transfers to the USA are protected by standard contractual clauses.</p>
   <p><strong>Map tiles:</strong> route maps are displayed using the <strong>OpenFreeMap</strong> service with OpenStreetMap data. When a map is shown, your phone downloads map tiles, which reveal the displayed area and your phone's IP address. No account data or route points are sent there.</p>
 
   <h2>4. How long we keep data</h2>
@@ -144,6 +169,8 @@
     <li>Crash reports are deleted after 90 days at the latest.</li>
     <li>Posts on the friends' wall and reactions to them are deleted after 60 days.</li>
     <li>In-app notifications (the bell) are deleted after 30 days.</li>
+    <li>Your phone's push notification address is deleted when you log out or delete your account.</li>
+    <li>The challenge stored on your phone for offline mode and the widget is replaced the next day; the widget is cleared when you log out.</li>
     <li>Route points are deleted straight after the check. Route maps are only on your phone and are deleted when you log out or under <em>Profile → Account &amp; privacy → Delete route maps from this phone</em>.</li>
     <li>Reports (those you sent and those about you) may be kept after your account is deleted, no longer linked to the account, only until the case is resolved.</li>
   </ul>
@@ -154,6 +181,7 @@
     <li><strong>Erasure:</strong> you can delete your account and all data under <em>Profile → Account &amp; privacy → Delete account</em>. You can also do it without the app, see <a href="smazani-uctu-en.html">How to delete your account</a>.</li>
     <li><strong>Withdrawing consent for steps and location:</strong> turn off step access in the Health Connect app and location access in your phone settings (Apps → Dareva → Permissions). You can still tick challenges off, just without the Verified label. You'll also find an explanation under <em>Profile → Account &amp; privacy → Activity &amp; privacy</em>.</li>
     <li><strong>Withdrawing consent for health data:</strong> under <em>Profile → Account &amp; privacy → Delete health data</em>. Withdrawal does not affect processing before it.</li>
+    <li><strong>Phone alerts:</strong> turn them off under <em>Profile → Alerts</em> or in your phone settings.</li>
     <li><strong>Withdrawing consent for personalised ads:</strong> under <em>Profile → Account &amp; privacy → Ad settings</em>.</li>
     <li><strong>Rectification, restriction of processing and objection:</strong> write to us at the e-mail above.</li>
     <li><strong>Complaint:</strong> you have the right to lodge a complaint with the Czech Office for Personal Data Protection (Úřad pro ochranu osobních údajů), Pplk. Sochora 27, 170 00 Prague 7, <a href="https://uoou.gov.cz">uoou.gov.cz</a>, or with the data protection authority in your country.</li>
