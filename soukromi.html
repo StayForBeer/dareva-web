@@ -31,11 +31,16 @@
     <tr><th>Údaje</th><th>K čemu</th><th>Právní důvod</th></tr>
     <tr>
       <td>E-mail a heslo (heslo ukládáme jen v zašifrované podobě)</td>
-      <td>Vytvoření účtu a přihlášení</td>
+      <td>Vytvoření účtu a přihlášení heslem nebo jednorázovým kódem z e-mailu</td>
       <td>Plnění smlouvy (čl. 6 odst. 1 písm. b GDPR)</td>
     </tr>
     <tr>
-      <td>Uživatelské jméno, osobní kód pro přidávání přátel</td>
+      <td>Při přihlášení přes Google: e-mail, jméno a ID účtu Google</td>
+      <td>Vytvoření účtu a přihlášení bez hesla</td>
+      <td>Plnění smlouvy</td>
+    </tr>
+    <tr>
+      <td>Uživatelské jméno, osobní kód pro přidávání a zvaní přátel</td>
       <td>Rozlišení uživatelů, přidávání přátel přes jméno nebo QR kód</td>
       <td>Plnění smlouvy</td>
     </tr>
@@ -105,9 +110,24 @@
       <td>Oprávněný zájem (čl. 6 odst. 1 písm. f GDPR)</td>
     </tr>
     <tr>
-      <td>Předplatné Dareva Plus (jestli ho máš, typ a do kdy platí)</td>
-      <td>Odemknutí funkcí Dareva Plus</td>
+      <td>Předplatné Dareva Plus (jestli ho máš, typ, do kdy platí, jestli jde o zkušební dobu a jestli neprošla platba)</td>
+      <td>Odemknutí funkcí Dareva Plus a upozornění na konec zkušební doby nebo neprošlou platbu</td>
       <td>Plnění smlouvy</td>
+    </tr>
+    <tr>
+      <td>Pozvánky: kdo tě pozval a koho jsi pozval/a, jestli pozvaný splnil první výzvu, bonusové dny Dareva Plus</td>
+      <td>Odměna za pozvání přítele (týden Dareva Plus, nejvýš 5 ročně)</td>
+      <td>Plnění smlouvy</td>
+    </tr>
+    <tr>
+      <td>Odkaz, přes který jsi aplikaci nainstaloval/a z Google Play (jen kód přítele, je-li v odkazu)</td>
+      <td>Automatické vyplnění kódu přítele při registraci</td>
+      <td>Oprávněný zájem (čl. 6 odst. 1 písm. f GDPR)</td>
+    </tr>
+    <tr>
+      <td>Adresa telefonu pro push notifikace (token od Expo a Firebase) a nastavení upozornění</td>
+      <td>Posílání upozornění na telefon (např. žádost o přátelství, konec výzvy, výsledek týdne)</td>
+      <td>Plnění smlouvy. Upozornění na telefon můžeš kdykoliv vypnout.</td>
     </tr>
     <tr>
       <td>Reklamní ID zařízení, IP adresa, informace o zařízení a o zobrazení reklamy (jen bez předplatného, když přelosuješ výzvu za reklamu)</td>
@@ -124,7 +144,10 @@
   <p><strong>Nikdo</strong> nevidí tvoje odpovědi z dotazníku, zdravotní omezení, kroky a vzdálenost z Health Connect, polohu ani mapy tras.</p>
   <p><strong>Kroky a vzdálenost (Health Connect):</strong> jen čteme, nic do Health Connect nezapisujeme. Ručně zadané záznamy nepočítáme. Data z Health Connect používáme jen k ověření výzev v aplikaci. Neprodáváme je, nepoužíváme k reklamě ani k hodnocení úvěruschopnosti a nikomu je nepředáváme, kromě poskytovatele serveru uvedeného níže. Používání dat z Health Connect se řídí pravidly Google Play pro Health Connect včetně požadavků na omezené použití (Limited Use).</p>
   <p><strong>Poloha:</strong> čteme ji jen během záznamu trasy, který sám/sama spustíš. Po celou dobu záznamu je vidět notifikace a poloha na pozadí bez ní se nepoužívá. Body trasy se pošlou na náš server jen ke kontrole (vzdálenost a jestli nešlo o jízdu autem) a hned po ní se smažou. Uloží se jen výsledný počet metrů. Mapa trasy zůstává jen v tvém telefonu, bez prvních a posledních 150 metrů, a nikdy se nesdílí.</p>
-  <p><strong>Notifikace</strong> (připomínky výzvy) plánuje přímo tvůj telefon. Na náš server se kvůli nim nic neposílá.</p>
+  <p><strong>Připomínky výzvy</strong> plánuje přímo tvůj telefon. Na náš server se kvůli nim nic neposílá.</p>
+  <p><strong>Upozornění na telefon (push):</strong> když povolíš notifikace, uloží se u nás adresa tvého telefonu pro push notifikace. Při novém upozornění (třeba žádost o přátelství, reakce, konec týdenní výzvy, výsledek týdne nebo konec zkušební doby Plus) pošle náš server krátký text upozornění, případně se jménem přítele, přes službu Expo a Firebase Cloud Messaging do tvého telefonu. Které upozornění chodí do zvonečku a které na telefon, nastavíš v <em>Profil → Upozornění</em>. Po odhlášení se adresa telefonu smaže.</p>
+  <p><strong>Pozvánky:</strong> když se zaregistruješ s kódem přítele, stanete se rovnou přáteli a přítel uvidí, že ses přidal/a a jestli jsi splnil/a první výzvu. Kód přítele může aplikace vyplnit sama podle odkazu, přes který jsi ji stáhl/a z Google Play.</p>
+  <p><strong>Offline a widget:</strong> dnešní vylosovaná výzva se ukládá i v telefonu, aby šla zobrazit a splnit bez internetu a aby ji ukázal widget na ploše. Výzva splněná bez internetu (i s fotkou) počká v telefonu, dokud se neodešle. Widget ukazuje na ploše název dnešní výzvy a sérii, takže je uvidí každý, kdo vidí tvůj telefon. Widget můžeš kdykoliv odebrat z plochy.</p>
   <p><strong>Reklamy</strong> vidíš jen bez předplatného, a to jen tehdy, když se sám/sama rozhodneš přelosovat výzvu za krátké video. Jinde v aplikaci reklamy nejsou. Při prvním spuštění se tě formulář od Googlu zeptá na souhlas s personalizovanými reklamami. Když nesouhlasíš, uvidíš reklamy nepersonalizované. Souhlas kdykoliv změníš v <em>Profil → Účet a soukromí → Nastavení reklam</em>. S předplatným Dareva Plus žádné reklamy nejsou.</p>
   <p>Aplikace nepoužívá analytické nástroje třetích stran (kromě hlášení chyb popsaného níže) a tvoje údaje <strong>nikomu neprodáváme</strong>. Zdravotní údaje, polohu, odpovědi z dotazníku ani fotky nikdy nepoužíváme k reklamě.</p>
 
@@ -134,6 +157,8 @@
   <p><strong>Předplatné:</strong> stav předplatného nám pomáhá spravovat služba <strong>RevenueCat</strong> (RevenueCat, Inc., USA). Dostává jen anonymní ID účtu a údaje o nákupu z Google Play (produkt, datum, platnost), ne e-mail ani jméno. Přenos do USA je chráněn standardními smluvními doložkami.</p>
   <p><strong>Reklamy:</strong> reklamy za odměnu zobrazuje <strong>Google AdMob</strong> (Google Ireland Limited) jako samostatný správce podle svých zásad (<a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>). Neposíláme mu žádné údaje o tvém účtu.</p>
   <p><strong>Hlášení chyb:</strong> když aplikace spadne, odešle se automaticky technické hlášení (popis chyby, verze aplikace, model a systém telefonu a anonymní ID účtu) službě <strong>Sentry</strong> (Functional Software, Inc.). Data jsou uložena v <strong>Evropské unii (Německo)</strong>. Hlášení neobsahuje e-mail, jméno, fotky ani poznámky a slouží jen k opravě chyb. Smaže se nejpozději po 90 dnech.</p>
+  <p><strong>Přihlášení přes Google:</strong> když se přihlásíš přes Google, ověří tvůj účet <strong>Google</strong> (Google Ireland Limited) a nám předá jen e-mail, jméno a ID účtu. K tvému účtu Google ani heslu přístup nemáme.</p>
+  <p><strong>Push notifikace a aktualizace aplikace:</strong> upozornění na telefon doručuje služba <strong>Expo</strong> (650 Industries, Inc., USA) přes <strong>Firebase Cloud Messaging</strong> (Google). Dostanou jen adresu telefonu a text upozornění. Ze serverů Expo si aplikace stahuje i opravy a aktualizace, přitom se předává IP adresa telefonu a verze aplikace. Přenos do USA je chráněn standardními smluvními doložkami.</p>
   <p><strong>Mapové podklady:</strong> mapu trasy zobrazujeme pomocí služby <strong>OpenFreeMap</strong> s daty OpenStreetMap. Při zobrazení mapy si telefon stáhne mapové dlaždice, ze kterých jde poznat zobrazená oblast a IP adresa telefonu. Neposílají se tam žádné údaje o tvém účtu ani body trasy.</p>
 
   <h2>4. Jak dlouho údaje uchováváme</h2>
@@ -144,6 +169,8 @@
     <li>Hlášení o pádech aplikace se mažou nejpozději po 90 dnech.</li>
     <li>Příspěvky na zdi přátel a reakce na ně se mažou po 60 dnech.</li>
     <li>Upozornění v aplikaci (zvoneček) se mažou po 30 dnech.</li>
+    <li>Adresu telefonu pro push notifikace mažeme po odhlášení nebo smazání účtu.</li>
+    <li>Výzva uložená v telefonu kvůli offline režimu a widgetu se přepíše další den, při odhlášení se widget vymaže.</li>
     <li>Body trasy mažeme hned po kontrole. Mapy tras jsou jen v telefonu a smažou se odhlášením nebo v <em>Profil → Účet a soukromí → Smazat mapy tras z telefonu</em>.</li>
     <li>Nahlášení (ta, která jsi poslal/a, i ta, která se týkají tebe) můžeme po smazání účtu uchovat už bez propojení s účtem, jen dokud není případ vyřešen.</li>
   </ul>
@@ -154,6 +181,7 @@
     <li><strong>Výmaz:</strong> účet a všechna data smažeš v <em>Profil → Účet a soukromí → Smazat účet</em>. Jde to i bez aplikace, viz <a href="smazani-uctu.html">Jak smazat účet</a>.</li>
     <li><strong>Odvolání souhlasu se zdravotními údaji:</strong> v <em>Profil → Účet a soukromí → Smazat zdravotní údaje</em>. Odvolání nemá vliv na zpracování před ním.</li>
     <li><strong>Odvolání souhlasu s kroky a polohou:</strong> přístup ke krokům vypneš v aplikaci Health Connect, přístup k poloze v nastavení telefonu (Aplikace → Dareva → Oprávnění). Výzvy půjdou dál odškrtnout, jen bez štítku Ověřeno. Vysvětlení najdeš i v <em>Profil → Účet a soukromí → Pohyb a soukromí</em>.</li>
+    <li><strong>Upozornění na telefon:</strong> vypneš je v <em>Profil → Upozornění</em> nebo v nastavení telefonu.</li>
     <li><strong>Odvolání souhlasu s personalizovanými reklamami:</strong> v <em>Profil → Účet a soukromí → Nastavení reklam</em>.</li>
     <li><strong>Oprava, omezení zpracování a námitka:</strong> napiš nám na e-mail výše.</li>
     <li><strong>Stížnost:</strong> máš právo podat stížnost u Úřadu pro ochranu osobních údajů, Pplk. Sochora 27, 170 00 Praha 7, <a href="https://uoou.gov.cz">uoou.gov.cz</a>.</li>
